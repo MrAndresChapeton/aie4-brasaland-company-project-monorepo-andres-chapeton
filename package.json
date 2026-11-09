@@ -1,0 +1,13 @@
+{
+  "name": "brasaland-monorepo",
+  "private": true,
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "npm --prefix uis/website run dev --",
+    "build": "npm --prefix uis/website run build",
+    "lint": "npm --prefix uis/website run lint",
+    "typecheck": "npm --prefix uis/website run typecheck && npm --prefix packages/operations run typecheck",
+    "test": "node --test packages/operations/tests/*.test.ts uis/website/tests/*.test.ts",
+    "test:e2e": "npm --prefix uis/website run test:e2e"
+  }
+}

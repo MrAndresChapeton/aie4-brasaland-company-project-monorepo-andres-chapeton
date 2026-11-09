@@ -13,3 +13,9 @@ Organiza `uis/` por **distintas áreas de la compañía** — cada subcarpeta ag
 - **Recomendación**: documenta en este archivo (o en sub-READMEs) las aplicaciones que vayas añadiendo, su objetivo, tecnología usada y cómo ejecutarlas.
 
 > _These instructions are also available in [English](./README.md)._
+
+## Sitio público
+
+La web pública de Brasaland vive en [`website/`](./website/). Es una página única hecha con Next.js, React, TypeScript y Tailwind CSS que reúne la presentación de marca y el registro de Brasa Points.
+
+Para ejecutarla, entra en `website/`, instala dependencias con `npm install` y ejecuta `npm run dev`. El registro valida los datos en el navegador; todavía no está conectado a un backend.

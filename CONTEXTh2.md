@@ -7,7 +7,7 @@ La marca siempre ha representado tres cosas: una comida que sabe igual independi
 
 ## Proposito
 
-1. Me atare ayudar a mejorar la cadena de suministro y operaciones multipais de los 14 locales y los que quieran abrir. Realizando un dashboard multiplataforma que unifique sus KPI, operaciones, suministros y solicitudes de materiales. 
+1. El proposito es ayudar a mejorar la cadena de suministro y operaciones multipais de los 14 locales y los que quieran abrir. Realizando un dashboard multiplataforma que unifique sus KPI, operaciones, suministros y solicitudes de materiales. 
 2. Adicional crear un app de fidelizacion de clientes, generando ofertas que esten propuestas por Brasaland.
 
 ### Departamento  

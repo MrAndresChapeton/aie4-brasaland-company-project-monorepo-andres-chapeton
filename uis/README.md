@@ -13,3 +13,9 @@ Organize `uis/` by **different concerns** — each subfolder covers a distinct a
 - **Recommendation**: document in this file (or in sub-READMEs) the applications you add, their objective, the technology used, and how to run them.
 
 > _Estas instrucciones también están disponibles en [español](./README.es.md)._
+
+## Public website
+
+Brasaland's public website lives in [`website/`](./website/). It is a single-page app built with Next.js, React, TypeScript, and Tailwind CSS, combining the brand presentation and Brasa Points registration.
+
+To run it, enter `website/`, install dependencies with `npm install`, and run `npm run dev`. Registration currently validates data in the browser and is not connected to a backend.

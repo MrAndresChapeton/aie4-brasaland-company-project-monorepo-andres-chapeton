@@ -49,13 +49,35 @@ Estás construyendo **una sola empresa** a lo largo de muchos hitos y proyectos.
 
 ---
 
-## Estado actual de la plantilla
+## Estado actual de Brasaland
 
-> 💡 Actualmente el repositorio ofrece solo una **estructura base de carpetas y documentación**. Todavía no incluye aplicaciones ejecutables ni scripts globales en la raíz.
->
-> - `CONTEXT.md` es un placeholder y debe sustituirse por el contexto de la empresa asignada.
-> - No existe todavía un `AGENTS.md` en la raíz.
-> - Existe metadata del paquete compartido en `packages/shared/package.json` (`@repo/shared-types`), pero aún no hay runner de workspace en raíz.
+- [Sitio público](uis/website/README.md): Next.js, React y Tailwind; landing y registro simulado Brasa Points.
+- [Operaciones H2](packages/operations/README.md): 23 funciones TypeScript para colecciones, búsquedas, finanzas, performance, reportes y validaciones.
+- [Tipos compartidos](packages/shared/README.md): entidades de menú, ventas, locaciones y desperdicios.
+- Requisitos: [hito 1](CONTEXT-brasaland.es.md), [propósito H2](CONTEXTh2.md) y [especificaciones H2](CONTEXT_h2-brasaland.es.md).
+- Las API futuras pertenecen a `services/`; este hito no añade backend, pedidos ni reservas.
+
+### Ejecutar desde la raíz
+
+Requiere Node.js 24 o superior. Las dependencias se mantienen dentro de la aplicación, sin moverlas a la raíz.
+
+```bash
+npm --prefix uis/website ci
+npm run dev -- --port 3000
+```
+
+Abre <http://localhost:3000> o <http://localhost:3000/registro#registro>.
+
+```bash
+npm test
+npm run typecheck
+npm run lint
+npm run build
+npm --prefix uis/website exec -- playwright install chromium
+npm run test:e2e
+```
+
+Las pruebas de navegador requieren el servidor activo en el puerto 3000 y cubren escritorio y móvil. Los datos del registro solo se validan en memoria; no se guardan ni se envían correos.
 
 ---
 

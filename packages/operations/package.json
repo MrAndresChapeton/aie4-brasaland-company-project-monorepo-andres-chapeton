@@ -1,0 +1,11 @@
+{
+  "name": "@repo/operations",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "../../uis/website/node_modules/.bin/tsc -p tsconfig.json"
+  }
+}
